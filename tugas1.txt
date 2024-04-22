@@ -242,7 +242,7 @@ SELECT * FROM produk WHERE LEFT(kode, 1) NOT LIKE 'M%';
 
 
 3. Tampilkan produk-produk televisi
-SELECT kode, nama, merek, ukuran_layar, harga FROM produk;
+SELECT * FROM produk WHERE nama LIKE '%Televisi%';
 
 +----+--------+-------------------+------------+------------+------+----------+------+-----------+-----------------+
 | id | kode   | nama              | harga_beli | harga_jual | stok | min_stok | foto | deskripsi | jenis_produk_id |
